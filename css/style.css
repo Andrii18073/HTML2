@@ -1,0 +1,90 @@
+.block{
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #000;
+    background: #0ce39a;
+}
+
+.container{
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+    .Welcome{
+        color: rgb(18, 73, 110);
+        position: relative; width: 100%; height: 100px; top: -25px;text-align: center;
+}
+
+    .title{
+        color: rgb(18, 73, 110);
+        position: relative;text-align: center; 
+        font-size: 30px;
+        font-weight: 700;
+}
+
+    .text{
+        color: rgb(109, 153, 149);
+        position: relative; text-align: center;
+        font-size: 25px;
+        font-family: Georgia;
+        font-weight: 700;
+    }
+    
+    .center-img{
+        display: block;
+        margin: 0 auto;
+}
+
+
+
+body{
+    display: flex;
+    justify-content: 50%;
+    align-items: center;
+    min-height: 10vh;
+    font-size: 20px;
+    padding: 30px;
+    background-color: #1a1b19;
+}
+
+
+a {
+position: relative;
+text-decoration: none;
+color: #fff;
+background: linear-gradient(45deg, #0ce39a, #69007f, #fc0987);
+padding: 20px 40px;
+border-radius: 10px;
+font-size: 1.25em;
+
+}
+a span {
+    position: relative;
+    z-index: 10;
+}
+a::before{
+    content: "";
+    position: absolute;
+    inset: 1px;
+    background: #272727;
+    border-radius: 9px;
+    transform: 0.5s;
+
+}
+a:hover::before{
+    opacity: 0.7;
+
+}
+a::after{
+    content: "";
+    position: absolute;
+    inset: 0px;
+    background: linear-gradient(45deg, #0ce39a, #69007f, #fc0987);
+    border-radius: 9px;
+    transition: 0.5s;
+    opacity: 0;
+    filter: blur(20px);
+}
+a:hover::after{
+    opacity: 1;
+}
